@@ -1,0 +1,35 @@
+// location
+
+.location__form {
+    display: flex;
+    padding: $m-size;    
+}
+
+.location__input {
+    background: $grain;
+    border-radius: 6px;
+    flex-grow: 1;
+    color: darken($blackboard, 15%);
+    border: none;
+    border-bottom: .3rem solid darken($blackboard, 10%);
+    margin-right: $s-size;
+    padding: $s-size;
+}
+
+.location__button {
+    background: $oxblood;
+    border: none;
+    border-bottom: .3rem solid darken($oxblood, 25%);
+    border-radius: 6px;
+    color: darken(white, 15%);
+    font-weight: 500;
+    padding: $s-size;
+}
+
+.location__header {
+    color: darken($blackboard, 15%);
+    text-align: center;
+    font-size: $mid-size;
+    margin: 0;
+    margin-bottom: $m-size;
+}

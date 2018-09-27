@@ -1,0 +1,125 @@
+#circle {
+  position: absolute;
+  top: 330px;
+  left: 315px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+  z-index: 1000;
+}
+
+.date {
+  left: 200px;
+  position: absolute;
+  top: 430px;
+  z-index: 1000;
+}
+
+.date__data {
+  background: $tan;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: $m-size;
+  margin-bottom: $s-size;
+  opacity: 0.65;
+  padding: 5px;
+  text-align: center;
+}
+
+.info {
+  left: 170px;
+  top: 170px;
+  position: absolute;
+  width: 50%;
+  z-index: 1000;
+}
+
+.info__data {
+  background: $tan;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: $m-size;
+  margin-bottom: $s-size;
+  opacity: 0.75;
+  padding: 5px;
+}
+
+.textblue {
+  color: blue;
+}
+
+.textred {
+  color: #F00000;
+}
+
+.textgreen {
+  color: green;
+}
+
+.textorange {
+  color: brown;
+}
+
+.dials-container {
+  width: 650px;
+  height: 690px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.dial {
+  opacity: 0.75;
+  padding: 0;
+  padding-top: $m-size;
+  position: absolute;
+  z-index: 3;
+}
+
+.pointer {
+  opacity: 1;
+  position: absolute;
+  left: 324px;
+  top: $m-size;
+  transform: rotate(0deg);
+  transform-origin: 1px 324px; 
+  z-index: 100;
+}
+
+.textData {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolLabel {
+  background: #ccc;
+  border-radius: 5px;
+  font-weight: 700;
+  margin: $xs-size;
+  padding: $xs-size;
+}
+
+.toolLabel--top {
+  margin-bottom: 0;
+}
+
+.toolLabel--bottom {
+  margin-top: 0;
+}
+
+.toolLabel--local {
+  color: red;
+}
+
+.toolLabel--utc {
+  color: blue;
+}
+
+.toolLabel--lst {
+  color: green;
+}

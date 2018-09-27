@@ -1,0 +1,29 @@
+.block {
+    background: $tan;
+    border-radius: 10px;
+    margin-bottom: $l-size
+}
+
+.block__details {
+    padding: $m-size;
+}
+
+.row__data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $s-size;
+    h3 {
+        color: darken($blackboard, 15%);
+        margin: 0;
+    }
+    .footer__text {
+        color: darken(white, 10%);
+        margin: 0;
+        font-size: $s-size;
+        font-weight: 700;
+    }
+}
+
+.row__data--last {
+    margin-bottom: 0;
+}
