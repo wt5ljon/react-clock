@@ -10,20 +10,17 @@
 }
 
 .date {
-  left: 200px;
   position: absolute;
   top: 430px;
+  width: 100%;
   z-index: 1000;
 }
 
 .date__data {
-  background: $tan;
-  border-radius: 6px;
   font-weight: 700;
-  font-size: $m-size;
+  font-size: 2.0rem;
   margin-bottom: $s-size;
-  opacity: 0.65;
-  padding: 5px;
+  opacity: 0.85;
   text-align: center;
 }
 
