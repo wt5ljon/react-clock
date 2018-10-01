@@ -94,11 +94,15 @@ export default class ShowTime extends React.Component {
     const { time, sun } = this.state;
 
     // convert nowLocal from UTC to local time using time zone offset and dst offset
-    const local = moment(time);
-    local.add(location.rawOffset, 's').add(location.dstOffset, 's');
-
-    const lst = parseTime(calcLST(time, location.longitude));
-    const lstParsed = lst.split(':');
+    let local, lst;
+    if (location.address) {
+      local = moment(time);
+      local.add(location.rawOffset, 's').add(location.dstOffset, 's');
+      lst = parseTime(calcLST(time, location.longitude));
+    } else {
+      local = undefined;
+      lst = undefined;
+    }
 
     return (
       <div>
@@ -106,8 +110,8 @@ export default class ShowTime extends React.Component {
           <ShowDials 
             local={local} 
             gmt={time}
-            lstHour={lstParsed[0]}
-            lstMinute={lstParsed[1]}
+            lstHour={lst && lst.split(':')[0]}
+            lstMinute={lst && lst.split(':')[1]}
             JD={numeral(calcJD(time)).format('0,0.0000')}
             sun={sun}
         />
