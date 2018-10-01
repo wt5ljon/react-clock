@@ -9,7 +9,6 @@ import ShowLocation from './ShowLocation';
 import ShowTime from './ShowTime';
 
 const apiKey = process.env.GEOCODE_API_KEY;
-console.log(apiKey);
 
 export default class SiderealApp extends React.Component {
   state = {
@@ -116,9 +115,10 @@ export default class SiderealApp extends React.Component {
   }
 
   render() {
+    const subtitle = "Displays local and universal time, time of sunrise, sunset and solar noon, and the Julian date and local sidereal time for any location in the world.";
     return (
       <div>
-        <Header subtitle="Displays current local and universal time, Julian date and sidereal time for any location in the world"/ >
+        <Header subtitle={subtitle} / >
         <div className="container">
           <Location
             error={this.state.error}

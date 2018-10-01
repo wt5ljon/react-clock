@@ -19,7 +19,7 @@ export default class ShowTime extends React.Component {
   };
 
   updateSunData = () => {
-    console.log('Here');
+    console.log('Sunrise/Sunset API Call');
     const { location } = this.props;
     const sunURL = `https://api.sunrise-sunset.org/json?lat=${location.latitude}&lng=${location.longitude}&formatted=0`;
     axios.get(sunURL)
