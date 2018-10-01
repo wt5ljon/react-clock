@@ -9,6 +9,7 @@ import ShowLocation from './ShowLocation';
 import ShowTime from './ShowTime';
 
 const apiKey = process.env.GEOCODE_API_KEY;
+console.log(apiKey);
 
 export default class SiderealApp extends React.Component {
   state = {
